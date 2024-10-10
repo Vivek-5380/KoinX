@@ -28,7 +28,7 @@ const fetchCryptoData = async () => {
     }
 };
 
-const job = cron.schedule('*/2 * * * *', fetchCryptoData);
+const job = cron.schedule('* */2 * * *', fetchCryptoData);
 
 module.exports = {
     fetchCryptoData,
