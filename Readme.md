@@ -127,4 +127,5 @@ The project uses a cron job to periodically fetch cryptocurrency data from the C
 
 The fetched data is then stored in the MongoDB time-series collection for further analysis and retrieval.
 
+
 ---
