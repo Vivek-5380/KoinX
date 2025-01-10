@@ -8,9 +8,10 @@ const { fetchCryptoData } = require('./jobs/fetchCryptoDataJob');
 const app = express();
 app.use(express.json());
 
+connectDB();
+
 const PORT = process.env.PORT || 3000;
 
-connectDB();
 app.use('/api', cryptoRoutes);
 
 app.listen(PORT, () => {

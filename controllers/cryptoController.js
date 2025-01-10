@@ -99,6 +99,7 @@ exports.getDeviation = async (req, res) => {
 
             const result = allCoins.map(coinData => {
                 const deviation = calculateStandardDeviation(coinData.prices);
+                
                 return {
                     coin: coinData._id,
                     deviation,

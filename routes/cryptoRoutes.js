@@ -3,7 +3,7 @@ const { getLatestStats, getDeviation } = require('../controllers/cryptoControlle
 
 const router = express.Router();
 
-router.get('/stats', getLatestStats);
 router.get('/deviation', getDeviation);
+router.get('/stats', getLatestStats);
 
 module.exports = router; 
